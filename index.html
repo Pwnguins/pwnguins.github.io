@@ -1,12 +1,97 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Page Title</title>
-  </head>
-  <body>
-  
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
-  
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pwnguins</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">
+        <span class="bracket">&lt;</span>Pwned<span class="bracket">&gt;</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#intro" onclick="scrollToSection('intro')">TEAM</a></li>
+        <li><a href="#members" onclick="scrollToSection('members')">MEMBERS</a></li>
+        <li><a href="#competitions" onclick="scrollToSection('competitions')">WINS</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero/Intro Section -->
+  <section id="intro" class="hero">
+    <div class="hero-content">
+      <div class="terminal-header">
+        <span class="terminal-dot"></span>
+        <span class="terminal-dot"></span>
+        <span class="terminal-dot"></span>
+      </div>
+      <h1 class="hero-title">Pwnguins</h1>
+      <p class="hero-subtitle">ELITE CTF TEAM</p>
+      <p class="hero-description">
+        We are a collective of elite hackers, penetration testers, and security enthusiasts
+        dedicated to capturing flags and breaking systems. From web exploitation to reverse
+        engineering, we tackle the most challenging security competitions.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" id="member_count">15</span>
+          <span class="stat-label">MEMBERS</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" id="competition_count">50+</span>
+          <span class="stat-label">COMPETITIONS</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">FLAGS</span>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-text">SCROLL TO EXPLORE</div>
+        <div class="scroll-arrow">↓</div>
+      </div>
+    </div>
+    <div class="hero-bg">
+      <div class="grid"></div>
+    </div>
+  </section>
+
+  <section id="members" class="members">
+    <div class="section-header">
+      <h2>TEAM MEMBERS</h2>
+      <div class="header-line"></div>
+    </div>
+
+    <div class="members-grid">
+    </div>
+  </section>
+
+  <section id="competitions" class="competitions">
+    <div class="section-header">
+      <h2>COMPETITIONS</h2>
+      <div class="header-line"></div>
+    </div>
+
+    <div class="competitions-grid">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">PWNGUINS CTF TEAM © 2025</p>
+      <div class="footer-divider"></div>
+      <p class="footer-text">CAPTURE THE FLAG. BREAK THE CODE. BECOME THE HACKER.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
